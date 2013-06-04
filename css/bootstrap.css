@@ -187,7 +187,7 @@ font-color:#fff;}
 	
 	
 a {
-  color: #000;
+  color: #bf070e;
   text-decoration: none;
 }
 
@@ -418,7 +418,7 @@ a:hover {
 .row-fluid .span6 {
   width: 48.93617021276595%;
   *width: 48.88297872340425%;
-  min-height:210px;
+  min-height:200px;
 }
 
 .row-fluid .span5 {
@@ -723,6 +723,7 @@ h3 {
 
 h4 {
   font-size: 17.5px;
+  line-height:24px;
 }
 
 h5 {
@@ -5216,6 +5217,7 @@ input[type="submit"].btn.btn-mini {
   margin: 0;
   font-size: 14px;
   font-weight: normal;
+  color: #d71920;
   line-height: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -5226,6 +5228,8 @@ input[type="submit"].btn.btn-mini {
 
 .popover-content {
   padding: 9px 14px;
+  font-size: 13px;
+  
 }
 
 .popover-content p,
@@ -5374,16 +5378,18 @@ a.thumbnail:hover {
 }
 
 .thumbnail a {
-  font-size:12px;
-  color: #999;
+  color: #bf070e;
   text-decoration: none;
 }	
 
 .thumbnail a:hover{
   color: #666;
   text-decoration: underline;
-}	
+}
 
+.exception{
+  font-size:12px;	
+}
 
 .logo{ 
  min-width:170px;
@@ -5764,7 +5770,7 @@ a.badge:hover {
 
 .accordion-inner ul li {
 	list-style: none;
-	float:none;
+	float:left;
 	vertical-align: middle;
 }
 

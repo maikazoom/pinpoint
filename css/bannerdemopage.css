@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#FFF;
+	margin:auto 0;
+}
+
+.wrapper {   	width: 1024px;
+		height: 900px;
+		/*background-image:url(../img/demo_banner.png);*/
+		border:dotted 1px #666666;
+		float:left;}
+
+header {width: 100%;
+clear:both;
+}
+
+footer {width:100%}
+
+.content {
+	float:left;}
+	
+.content div {
+	padding: 20px; margin:10px;
+ }
+ 
+.content ul li { width:100%; 
+padding:5px;
+margin:5px;
+list-style:none;}
+	
+.span1 { width:100px;}
+
+.span2	{ width:200px;}
+
+.span3	{ width:300px;}
+
+.span4	{ width:400px;}
+
+.span5	{ width:500px;}
+
+
+		
+	
+	
+	h1 {font-size:24px;}
+		
+	h2 { font-size:18px;}
+	
+	h3 {font-size: 16px;}
+	
+	h4 {font-size:14px}
+	
+	p { font-size:12px}
+	
+	
+
+.logo { float:left;
+	height: 120px;}
+
+.bannertopright { float:right;
+	width: 675px;
+	height:90;
+	vertical-align:middle;
+}
+
+.bannerbottom{
+	width:675px;
+	heigth:50px;
+}
+
+nav { 	
+	padding:10px;
+	height:40px;
+	clear:both;	
+}
+
+.clear
+{clear:both}
+
+.pull-right {
+	text-align:right;}
+	
+.pull-left
+	{ text-align:left;}
+	
+	hr { padding:20px;
+	        border: 0;
+	        border-bottom: 0px;
+	        border-top: 1px dotted #cccccc;
+	}

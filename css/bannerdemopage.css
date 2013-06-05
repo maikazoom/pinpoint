@@ -6,15 +6,43 @@ body {
 	margin:auto 0;
 }
 
-.wrapper {   	width: 1024px;
-		height: 900px;
-		/*background-image:url(../img/demo_banner.png);*/
-		border:dotted 1px #666666;
-		float:left;}
+a {color:#fff;
+text-decoration: none;} 
 
-header {width: 100%;
-clear:both;
+a:hover{color:#666;
+text-decoration: underline;}
+
+
+#navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #ffffff;
+	height: 40px;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #d71920;
+	 z-index: 1030;
+	
 }
+
+#navigation div {float:left;
+	width:30%;}
+	
+	
+#wrapper {   	width: 1024px;
+		height: 800px;
+		/*background-image:url(../img/demo_banner.png);*/
+		position:relative;
+		border:dotted 1px #666666;
+		float:none;
+		margin-top:30px;
+		margin: 0 auto;
+		padding-top:30px;}
+
+header 
+{width: 100%;
+clear:both;}
 
 footer {width:100%}
 
@@ -28,7 +56,10 @@ footer {width:100%}
 .content ul li { width:100%; 
 padding:5px;
 margin:5px;
-list-style:none;}
+list-style:none;
+}
+
+
 	
 .span1 { width:100px;}
 
@@ -40,6 +71,12 @@ list-style:none;}
 
 .span5	{ width:500px;}
 
+.span10	{ width:1000px;}
+
+
+.offset3 
+{margin-left:500px;}
+
 
 		
 	
@@ -50,9 +87,14 @@ list-style:none;}
 	
 	h3 {font-size: 16px;}
 	
-	h4 {font-size:14px}
+	h4 {font-size:14px;
+	text-transform: uppercase;}
 	
-	p { font-size:12px}
+	h5 {font-size:13px;
+		color: #d71920;
+		padding-top:20px;}
+	
+	p { font-size:12px;}
 	
 	
 
@@ -67,26 +109,38 @@ list-style:none;}
 
 .bannerbottom{
 	width:675px;
-	heigth:50px;
+	height:50px;
 }
 
 nav { 	
-	padding:10px;
-	height:40px;
-	clear:both;	
+	padding-top:20px;
+	height:40px;		
 }
 
 .clear
 {clear:both}
 
-.pull-right {
-	text-align:right;}
+.pull-right 
+	{float:right;}
 	
 .pull-left
-	{ text-align:left;}
+	{float:left;}
 	
 	hr { padding:20px;
 	        border: 0;
 	        border-bottom: 0px;
 	        border-top: 1px dotted #cccccc;
-	}
+}
+	
+#bottombanner {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #ffffff;
+	height: 50px;
+	margin-left:10%;
+	padding-bottom: 0px;
+	background-color: transparent;
+	 z-index: 1030;
+	
+}

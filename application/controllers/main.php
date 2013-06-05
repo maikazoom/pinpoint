@@ -98,7 +98,7 @@ class main extends CI_Controller {
 
 	function details($bundleID)
 	{
-		$this->db->select('network_sites.url, network_sites.title, content_bundles.name, sites_bundles.description as text,network_sites.logo, content_bundles.description as bundle_description ');
+		$this->db->select('network_sites.url, network_sites.title, network_sites.text as main_site_description, content_bundles.name, sites_bundles.description as text,network_sites.logo, content_bundles.description as bundle_description ');
 		$this->db->from('sites_bundles');
 		$this->db->join('network_sites','sites_bundles.siteID=network_sites.id');
 		$this->db->join('content_bundles', 'content_bundles.id=sites_bundles.bundleID');

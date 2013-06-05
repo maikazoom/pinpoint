@@ -98,7 +98,7 @@
 	    { $("#<?php echo str_replace("-","",url_title($site->title)); ?>").popover(
 	    	{
 	    		title: "<?php echo $site->title ?>", 
-	    		content:"<?php echo trim(str_replace('&nbsp;',' ',strip_tags($site->text))); ?>"
+	    		content:"<?php  if($site->text) echo trim(str_replace('&nbsp;',' ',strip_tags($site->text))); else echo trim(str_replace('&nbsp;',' ',strip_tags($site->main_site_description)));  ?>"
 	    	});
 	    });
     <?php endforeach; ?>

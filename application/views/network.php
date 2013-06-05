@@ -63,9 +63,16 @@
     <script>
 
     <?php foreach($sites->result() as $site): ?>
+    	 
 	    $(function ()
-	    { $("#<?php echo str_replace("-","",url_title($site->title)); ?>").popover({title: "<?php echo $site->title ?>", content: "<?php echo $site->title ?>"});
+	    { $("#<?php echo str_replace("-","",url_title($site->title)); ?>").popover(
+	    	{
+	    		title: "<?php echo $site->title ?>", 
+	    		content:"<?php echo trim(strip_tags($site->text)); ?>"
+	    	});
 	    });
     <?php endforeach; ?>
     
     </script>
+
+    <?php  ?>

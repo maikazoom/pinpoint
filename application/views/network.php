@@ -63,7 +63,7 @@
 
 					<p>
 						<br/>
-						<a href="<?php echo $site->url ?>" class="exception"><?php echo str_replace('http://','',$site->url); ?></a>
+						<a href="<?php echo $site->url ?>" target = "_blank" class="exception"><?php echo str_replace('http://','',$site->url); ?></a>
 					</p>
 		
 				</div>

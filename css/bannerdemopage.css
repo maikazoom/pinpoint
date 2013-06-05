@@ -22,7 +22,7 @@ text-decoration: underline;}
 	text-align: center;
 	padding-top: 5px;
 	background-color: #d71920;
-	 z-index: 1030;
+	 z-index: 999999999;
 	
 }
 
@@ -107,10 +107,10 @@ list-style:none;
 	vertical-align:middle;
 }
 
-.bannerbottom{
+/*.bannerbottom{
 	width:675px;
 	height:50px;
-}
+}*/
 
 nav { 	
 	padding-top:20px;
@@ -137,10 +137,12 @@ nav {
 	bottom: 0;
 	width: 100%;
 	color: #ffffff;
-	height: 50px;
-	margin-left:10%;
+	/*height: 50px;*/
+	padding-left:15%;
 	padding-bottom: 0px;
-	background-color: transparent;
-	 z-index: 1030;
+	background-color: #CCC;
+	 z-index: 9999999;
 	
 }
+
+  .no-padding div {padding:0 !important; margin:0 !important;}

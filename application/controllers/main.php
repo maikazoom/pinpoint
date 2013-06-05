@@ -29,7 +29,7 @@ class main extends CI_Controller {
 		$datas['width'] = 'width:700px';
 		
 		$this->load->view('header',$header);
-		$this->load->view('slider');
+		// $this->load->view('slider');
 		
 		$this->load->view('about');
 			
@@ -207,7 +207,7 @@ class main extends CI_Controller {
 		$header['h1'] = $contents->title;
 		$header['intro'] = strip_tags($contents->text);
 		$this->load->view('header');
-		$this->load->view('slider');
+		// $this->load->view('slider');
 		$this->load->view('contact');
 		$this->load->view('footer');
 		

@@ -46,17 +46,17 @@
                             Traffic your ads to show only on the types of content most relevant to your product, service or customer base.
        		     <table border="0" cellspacing="3" cellpadding="5">
 		     		    	
-       		     		    	<tr><td><h4>Business B2B Corporate <small><a href="#">details</a></small></h4></td><td><h3>3,760 TZS / $2.35<small> <br/>per 1000 ad displays </small></h3></td></tr>
+       		     		    	<tr><td><h4>Business B2B Corporate <small><a href="details/1">details</a></small></h4></td><td><h3>3,760 TZS / $2.35<small> <br/>per 1000 ad displays </small></h3></td></tr>
 					
-       					<tr><td><h4>Travel &amp; Tourism <small><a href="#">details</a></small></h4></td><td><h3>3,520 TZS / $2.20<small> <br/>per 1000 ad displays </small></h3></td></tr>
+       					<tr><td><h4>Travel &amp; Tourism <small><a href="details/2">details</a></small></h4></td><td><h3>3,520 TZS / $2.20<small> <br/>per 1000 ad displays </small></h3></td></tr>
 					
-       					<tr><td><h4>Sports &amp; Men’s Interest <small><a href="#">details</a></small><br/> Fashion &amp; Women’s Interest <small><a href="#">details</a></small></h4></td><td><h3>2,960 TZS / $1.85<small> <br/>per 1000 ad displays </small></h3></td></tr>
+       					<tr><td><h4>Sports &amp; Men’s Interest <small><a href="details/3">details</a></small><br/> Fashion &amp; Women’s Interest <small><a href="details/4">details</a></small></h4></td><td><h3>2,960 TZS / $1.85<small> <br/>per 1000 ad displays </small></h3></td></tr>
 					
-       					<tr><td><h4>Real Estate<small><a href="#">details</a></small><br/> Automotive <small><a href="#">details</a></small></h4></td><td><h3>2,800 TZS / $1.75 <small> <br/>per 1000 ad displays </small></h3></td></tr>
+       					<tr><td><h4>Real Estate<small><a href="details/5">details</a></small><br/> Automotive <small><a href="details/6">details</a></small></h4></td><td><h3>2,800 TZS / $1.75 <small> <br/>per 1000 ad displays </small></h3></td></tr>
 					
-       					<tr><td><h4>News &amp; Politics <small><a href="#">details</a></small></h4></td><td><h3>2,720 TZS / $1.70 <small> <br/>per 1000 ad displays </small></h3></td></tr>
+       					<tr><td><h4>News &amp; Politics <small><a href="details/7">details</a></small></h4></td><td><h3>2,720 TZS / $1.70 <small> <br/>per 1000 ad displays </small></h3></td></tr>
 					
-       					<tr><td><h4>Entertainment <small><a href="#">details</a></small><br/> Job's &amp; Employment <small><a href="#">details</a></small></h4></td><td><h3>2,400 TZS / $1.50 <small> <br/>per 1000 ad displays </small></h3></td></tr>
+       					<tr><td><h4>Entertainment <small><a href="details/9">details</a></small><br/> Job's &amp; Employment <small><a href="details/8">details</a></small></h4></td><td><h3>2,400 TZS / $1.50 <small> <br/>per 1000 ad displays </small></h3></td></tr>
        		     		    </table><a href="contact"><button class="btn-small btn-success pull-right">contact us</button></a>
                       
                     </div>

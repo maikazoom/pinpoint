@@ -18,9 +18,26 @@
 			    
     <div class="row-fluid span9 offset3">
 	   <div class="container gapped padded"> 
+	   	<?php if(!isset($details)): ?>
 		   <div class=" span7"><h2>The Network </h2><p class="style5">If they are online in Tanzania, we can reach them for you.  Our exclusive network of 27 top Tanzanian digital publishers provides unprecedented access to the most desirable market segments.  Mouse over the logos below for brief description about each site.
-  </p><a href="contact"><button class="btn-small btn-success">Contact Us</button></a>
+  			</p><a href="contact"><button class="btn-small btn-success">Contact Us</button></a>
 		   </div>
+		<?php else: ?>
+			<?php if($sites->num_rows() > 0): ?>
+			<?php $title = $sites->row()->name; ?>
+			<?php $bundle_description = $sites->row()->bundle_description; ?>
+			 <div class=" span7"><h2><?php echo $title; ?></h2><p class="style5"><?php strip_tags($bundle_description); ?>
+  			</p><a href="contact"><button class="btn-small btn-success">Contact Us</button></a>
+		   </div>
+			<?php else: ?>
+			<?php $title = $bundle->name; ?>
+			<?php $bundle_description = $bundle->description; ?>
+			 <div class=" span7"><h2><?php echo $title; ?></h2><p class="style5"><?php strip_tags($bundle_description); ?>
+  			</p><a href="contact"><button class="btn-small btn-success">Contact Us</button></a>
+		   </div>
+			<?php endif; ?>
+
+		<?php endif; ?>
 	   </div>
 		   <div class="clearfix"></div>
 		 
@@ -29,12 +46,21 @@
 
 			$all = $sites->num_rows();
 		?>
+		<?php if($all > 0): ?>
 		<?php foreach($sites->result() as $site): ?>
 		<?php if($i==0): ?>
 			<div class="container gapped padded">
 		<?php endif; ?>   
 				<div class="thumbnail span2">
-					<a href="#" id="<?php echo str_replace("-","",url_title($site->title)); ?>" data-placement="top" rel="popover"><img src="img/<?php echo $site->logo ?>"></a>
+					<a href="<?php echo current_url() . "#" . str_replace("-","",url_title($site->title)); ?>" id="<?php echo str_replace("-","",url_title($site->title)); ?>" data-placement="top" rel="popover">
+<!-- 						<?php if($site->logo) $logo = $site->logo; else $logo="no_logos.jpg" ?>
+						<img src="img/<?php echo $logo ?>"></a> -->
+					<?php if($site->logo): ?>
+						<img src="img/<?php echo $site->logo ?>">
+					<?php else: ?>
+						<?php echo $site->title; ?>
+					<?php endif; ?>
+
 					<p>
 						<br/>
 						<a href="<?php echo $site->url ?>" class="exception"><?php echo str_replace('http://','',$site->url); ?></a>
@@ -50,6 +76,10 @@
    	     	</div>
    	     <?php endif; ?>  
    	    <?php endforeach; ?>
+   		<?php else: ?>
+   			<p>No Sites in This Bundle</p>
+   	    <?php endif; ?>  
+   	    
 
     </div>
    <!-- end of row fluid ad gallery -->
@@ -68,7 +98,7 @@
 	    { $("#<?php echo str_replace("-","",url_title($site->title)); ?>").popover(
 	    	{
 	    		title: "<?php echo $site->title ?>", 
-	    		content:"<?php echo trim(strip_tags($site->text)); ?>"
+	    		content:"<?php echo trim(str_replace('&nbsp;',' ',strip_tags($site->text))); ?>"
 	    	});
 	    });
     <?php endforeach; ?>

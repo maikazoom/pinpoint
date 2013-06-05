@@ -94,7 +94,34 @@ class main extends CI_Controller {
 		
 		$this->load->view('targeting');
 		$this->load->view('footer',$footer);
-	}	
+	}
+
+	function details($bundleID)
+	{
+		$this->db->select('network_sites.url, network_sites.title, content_bundles.name, sites_bundles.description as text,network_sites.logo, content_bundles.description as bundle_description ');
+		$this->db->from('sites_bundles');
+		$this->db->join('network_sites','sites_bundles.siteID=network_sites.id');
+		$this->db->join('content_bundles', 'content_bundles.id=sites_bundles.bundleID');
+		$this->db->order_by('order');
+		$this->db->where('sites_bundles.bundleID', $bundleID);
+		$datas['sites']=$this->db->get();
+
+		if($datas['sites']->num_rows() == 0)
+		{
+			$this->db->where('id', $bundleID);
+			$datas['bundle'] = $this->db->get('content_bundles')->row();
+		}
+
+		$footer['noClients'] = 1;
+		$datas['details'] = 1;
+		
+		$this->load->view('header');
+		
+		$this->load->view('network',$datas);
+		$this->load->view('footer',$footer);
+
+		
+	}
 
 	function gallery()
 	{
@@ -385,11 +412,11 @@ class main extends CI_Controller {
 
 	function register_test()
 	{
-		$username = 'abba@pinpointafricamedia.com';
-		$email = 'abba@pinpointafricamedia.com';
-		$password = 'mlapakatz';
+		$username = 'michela@zoomtanzania.com';
+		$email = 'michela@zoomtanzania.com';
+		$password = 'maikamaika';
 		$additional_data = array(
-			'first_name' => 'Abba',
+			'first_name' => 'Michela',
 		);								
 //		$group = array('1'); // Sets user to admin. No need for array('1', '2') as user is always set to member by default
 

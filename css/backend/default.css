@@ -1,0 +1,224 @@
+.bold {font-weight: bold;}
+
+a {font-weight: bold; text-decoration: none;}
+a:link {color:#0000FF;}      /* unvisited link */
+a:visited {color:#0000FF;}  /* visited link */
+a:hover {color:#009344;}  /* mouse over link */
+a:active {color:#009344;}  /* selected link */
+
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+
+
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+
+
+	text-align: left;
+	border-collapse: collapse;
+}
+#rounded-corner thead th.rounded-company
+{
+	background: #b9c9fe url('../images/table-images/left.png') left -1px no-repeat;
+}
+#rounded-corner thead th.rounded-q4
+{
+	background: #b9c9fe url('../images/table-images/right.png') right -1px no-repeat;
+}
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff url('table-images/botleft.png') left bottom no-repeat;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff url('table-images/botright.png') right bottom no-repeat;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+#ved_content .part_of_content{
+float:left;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+height: 111px;
+margin:2px 0 20px 10px;
+}
+
+
+
+.myform{
+margin:0 auto;
+width:800px;
+padding:14px;
+}
+
+.bold {
+font-weight: bold;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:16px;
+font-weight:bold;
+margin-bottom:8px;
+border-bottom:solid 1px #b7ddf2;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:250px;
+float:left;
+clear: left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:200px;
+}
+#stylized input,.formlinks{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+.formlinks {
+	border: none;
+}
+
+#stylized select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#stylized textarea{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:250px;
+margin:2px 0 20px 10px;
+}
+
+
+
+#stylized img{
+float:left;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+height: 111px;
+margin:2px 0 20px 10px;
+
+}
+
+#stylized a, p{
+float:left;
+padding:0px 2px;
+margin:2px 0 20px 10px;
+color: #0000ff;
+cursor: pointer;
+
+
+}
+
+
+
+
+#stylized .the_image, #stylized .link {
+width: 200px;
+}
+
+#stylized button{
+/*clear:both;*/
+clear: none;
+float: left;
+/*margin-left:150px;*/
+margin-right:10px;
+width:125px;
+height:31px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+cursor:hand;
+}
+
+#stylized button.save {
+margin-left: 70px;
+}
+
+#front-page ul {
+	list-style: none;
+}
+
+#front-page ul li {
+	list-style: none;
+	height: 100px; width: 200px; text-align:center; padding-top: 40px; float: left; clear: none;
+	font-size: 18px;
+	margin-right: 10px;
+	margin-top: 10px;
+	box-shadow: 5px 5px 5px #ccc;
+	border-radius: 10px;
+}
+
+#front-page ul li a {
+	color: #ffffff;
+}
+
+
+
+.validation_error, .validation_error p
+{
+	color: ff0000;
+	font-weight: bold;
+	font-size: 14px;
+	
+}

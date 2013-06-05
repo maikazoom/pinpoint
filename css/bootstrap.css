@@ -5232,7 +5232,7 @@ input[type="submit"].btn.btn-mini {
 
 .popover-content {
   padding: 9px 14px;
-  font-size: 13px;
+  
   
 }
 
@@ -5240,6 +5240,7 @@ input[type="submit"].btn.btn-mini {
 .popover-content ul,
 .popover-content ol {
   margin-bottom: 0;
+  font-size: 13px !important;
 }
 
 .popover .arrow,

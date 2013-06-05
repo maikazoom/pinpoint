@@ -46,7 +46,7 @@
 
 <div><h3>Simple Interactive Rich Media Ads </h3></div>
 	   <div class="container gapped padded"> 
-		   <div class="thumbnail span3"><a href="#"><img src="img/demo_banner_expand.jpg"></a>
+		   <div class="thumbnail span3"><a href="example/adgallery_demopage_expanding"><img src="img/demo_banner_expand.jpg"></a>
 		   </div>
     <div class="thumbnail span6"><h4>Expansion</h4><p>Available in all sizes, the expansion ad is the most common rich media ad format and is typically provided by PinPoint.  Ad expands to a larger size on mouse-over grabbing attention and engaging the consumer.  Typically, these ads enjoy 100% - 150% more clicks than flat image ads. Must be less than 50 kb </p><a href="example/adgallery_demopage_expanding"><button class="btn-small btn-success">show the example</button></a>
     

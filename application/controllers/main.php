@@ -149,6 +149,11 @@ class main extends CI_Controller {
 		$this->load->view('rates');
 		$this->load->view('footer',$footer);
 	}
+
+	function example($view)
+	{
+		$this->load->view($view);
+	}
 	
 
 	
